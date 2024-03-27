@@ -1,0 +1,95 @@
+<html>
+<header>
+
+
+</header>
+<title></title>
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+
+
+<header>
+    <h1>App</h1> 
+    <div id="quoteDisplay"></div>
+</header>
+ <!-- Navigation Bar section -->
+ <nav id="nav">
+    <ul>
+        <li><a href="main.html" class="active" id="home">Home</a></li> 
+        <li><a href="cer2.html" id="contact">Contact</a></li> 
+        <li><a href="app.html" id="contact">App</a></li>
+    </ul>
+</nav>
+<body>
+    <div style="margin: auto; width: 40%;">
+    <div><p>
+        <button  onclick="saveQuotesToLocalStorage()">Save Quotes to LocalStorage </button>
+        <button onclick="loadQuotesFromLocalStorage()">Load Quotes from LocalStorage </button>
+        <br>
+        <br>
+    </p>
+    </div>
+    <label>Create List: </label>
+    <input type="text" id="create-list-name"> 
+    <button id="create-list">Create List</button>
+    <br>
+    <br>
+    <label>Current List Name: </label>
+    <input type="text" id="update-list-name-current">
+    <br>
+    <label>New List Name: </label>
+    <input type="text" id="update-list-name-new"> 
+    <br>
+    <button id="update-list">Update List</button>
+    <br>
+    <br>
+    <label>Delete List: </label>
+    <input type="text" id="delete-list-name"> 
+    <button id="delete-list">Delete List</button>
+    
+    <p></p>
+    <br>
+    <select id="categories"></select>
+        <label>Quote: </label>
+    <input type="text" id="quote-text"> 
+    <br>
+    <label>Author: </label>
+    <input type="text" id="quote-author">
+    <br>
+    <button id="create-quote">Create Quote</button>
+    </select>
+    <br>
+    
+    <div id="active-quote-div">
+    
+        <p> No quotes yet. </p>
+    
+    </div>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <input id="new-quote">
+        <input id="new-author">
+        <br>
+        <button id="save-new-quote" onclick="saveExistingQuote()">Save Quote</button>
+      </div>
+    </div>
+    <br>
+
+    <div class="back-arrow">
+        <a href="main.html">
+            <button id="home-button">
+                <span>Home Page</span>
+            </button>
+        </a>
+    </div>
+    </div>
+</body>
+
+</title>
+
+<script src="app.js"></script>
+
+</html>

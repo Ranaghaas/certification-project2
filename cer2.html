@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title> 
+    <style type="text/css">
+        label{
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Contact Us</h1> 
+    </header>
+
+    <!-- Navigation Bar section -->
+    <nav id="nav">
+        <ul>
+            <li><a href="main.html" class="active" id="home">Home</a></li> <!-- Home link-->
+            <li><a href="cer2.html" id="contact">Contact</a></li> <!-- Contact link -->
+            <li><a href="app.html" id="contact">App</a></li>
+
+        
+        </ul>
+    </nav>
+    
+
+    <!-- Contact Page - main content section -->
+    <main>
+                
+<!-- <div class="contact-form"> -->
+<form>
+</div>
+
+                <!-- Input fields for name, email, and message -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Please enter your name..." pattern="[A-Za-z]+"
+                    required>
+                 <br>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Please enter your email..." required>
+                 <br>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..."
+                    required></textarea>
+                 <br>
+
+                <!-- Submit button for the form -->
+                <button type="submit" value="Submit" onclick="validateForm()">Submit</button>
+</form>           
+
+            <!-- Thank you message displayed after submission (initially hidden) -->
+            <div id="thankYouMessage" style="display:none;">
+                <p>Thank you for your submission!</p>
+            </div>
+             <br>
+
+            <div class="back-arrow">
+                <a href="main.html">
+                    <button id="home-button">
+                        <span>Home Page</span>
+                    </button>
+                </a>
+            </div>
+            <div class="cntact-form"></div>
+                
+        </section>
+    </main>
+
+    <script src="contact.js"></script> 
+    <script src="main.js"></script> 
+    <script src="app.html"></script> 
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+:root {
+    --header: #413a5f;
+    --header-text: white;
+}
+body{
+    background-color: rgb(250, 226, 238);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Styling for the header and navigation bar */
+/* Styling for the page header */
+header {
+    background-color: var(--header);
+    color: var(--header-text);
+    text-align: center;
+    padding: 1.5em;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: rgb(241, 104, 170);
+    padding: 1em;
+    margin-bottom: 30px;
+}
+
+/* Style the navigation links as a horizontal list */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style for navigation link text */
+nav a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #000000;
+    text-align: center;
+}
+
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #e4b0dd;
+}
+
+ /* Form contact form input styles */
+  input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 3px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  input[type="email"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 3px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+}
+ 
+  textarea {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 3px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .modal-content{
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 3px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+/* home page contianer  */
+ .container1 {
+    margin: 100 auto;
+    padding: 20px;
+    width: 400px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    background-color: #faccea;
+    border: 1px solid #474343;
+  } 
+  
+  
+   /* Adjustments, for screens like phones */
+  @media (max-width: 767px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* Customizations for medium sized screens such as tablets */
+  @media (min-width:768px) and (max-width: 1023px) {
+    .container {
+      max-width: 60px;
+    }
+  }
+  
+  /* Styling changes for screens, like desktops */
+  @media (min-width: 1024px) {
+    .container {
+      padding: 40px;
+    }
+  }
+   
+  
